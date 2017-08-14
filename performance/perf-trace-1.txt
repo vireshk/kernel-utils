@@ -1,0 +1,15 @@
+Test: perf bench sched pipe
+
+# Running 'sched/pipe' benchmark:
+# Executed 1000000 pipe operations between two processes
+
+     Total time: 4.625 [sec]
+
+       4.625847 usecs/op
+         216176 ops/sec
+
+Sched-stats:
+/sys/devices/system/cpu/cpufreq/schedutil/callback_count:2047297
+/sys/devices/system/cpu/cpufreq/schedutil/rate_limit_us:500
+/sys/devices/system/cpu/cpufreq/schedutil/tick:1
+/sys/devices/system/cpu/cpufreq/schedutil/update_count:890474

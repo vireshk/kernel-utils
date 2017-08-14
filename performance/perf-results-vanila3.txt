@@ -1,0 +1,207 @@
+Test: cyclictest -q -t 8 -i 10000 --latency=1000000 -D 20
+
+# /dev/cpu_dma_latency set to 1000000us
+T: 0 ( 6086) P: 0 I:10000 C:   2000 Min:      2 Act:  211 Avg:  207 Max:     329
+T: 1 ( 6087) P: 0 I:10500 C:   1905 Min:      3 Act:   99 Avg:  196 Max:     325
+T: 2 ( 6088) P: 0 I:11000 C:   1819 Min:      5 Act:  217 Avg:  202 Max:     326
+T: 3 ( 6089) P: 0 I:11500 C:   1740 Min:      2 Act:   99 Avg:  181 Max:     327
+T: 4 ( 6090) P: 0 I:12000 C:   1667 Min:      7 Act:  213 Avg:  196 Max:     316
+T: 5 ( 6091) P: 0 I:12500 C:   1600 Min:      2 Act:   88 Avg:  168 Max:     327
+T: 6 ( 6092) P: 0 I:13000 C:   1539 Min:      2 Act:   96 Avg:  182 Max:     320
+T: 7 ( 6093) P: 0 I:13500 C:   1482 Min:      2 Act:   74 Avg:  180 Max:     326
+
+Sched-stats:
+/sys/devices/system/cpu/cpufreq/schedutil/rate_limit_us:10000
+/sys/devices/system/cpu/cpufreq/schedutil/tick:0
+
+
+Test: cyclictest -q -t 16 -i 10000 --latency=1000000 -D 20
+
+# /dev/cpu_dma_latency set to 1000000us
+T: 0 ( 6097) P: 0 I:10000 C:   2000 Min:      5 Act:  214 Avg:  159 Max:     318
+T: 1 ( 6098) P: 0 I:10500 C:   1905 Min:      2 Act:  223 Avg:  164 Max:     307
+T: 2 ( 6099) P: 0 I:11000 C:   1819 Min:      5 Act:  213 Avg:  157 Max:     309
+T: 3 ( 6100) P: 0 I:11500 C:   1740 Min:      4 Act:   90 Avg:  156 Max:     553
+T: 4 ( 6101) P: 0 I:12000 C:   1667 Min:      4 Act:  196 Avg:  139 Max:     327
+T: 5 ( 6102) P: 0 I:12500 C:   1600 Min:      2 Act:   90 Avg:  137 Max:     311
+T: 6 ( 6103) P: 0 I:13000 C:   1539 Min:      6 Act:   39 Avg:  150 Max:     319
+T: 7 ( 6104) P: 0 I:13500 C:   1482 Min:      2 Act:   35 Avg:  146 Max:     306
+T: 8 ( 6105) P: 0 I:14000 C:   1429 Min:      2 Act:  229 Avg:  141 Max:     319
+T: 9 ( 6106) P: 0 I:14500 C:   1380 Min:      3 Act:   88 Avg:  150 Max:     308
+T:10 ( 6107) P: 0 I:15000 C:   1334 Min:      2 Act:   97 Avg:  127 Max:     285
+T:11 ( 6108) P: 0 I:15500 C:   1291 Min:      2 Act:   83 Avg:  152 Max:     325
+T:12 ( 6109) P: 0 I:16000 C:   1250 Min:      2 Act:   41 Avg:  141 Max:     277
+T:13 ( 6110) P: 0 I:16500 C:   1213 Min:      7 Act:  269 Avg:  141 Max:     278
+T:14 ( 6111) P: 0 I:17000 C:   1177 Min:      3 Act:  197 Avg:  150 Max:     290
+T:15 ( 6112) P: 0 I:17500 C:   1143 Min:      3 Act:   89 Avg:  133 Max:     308
+
+Sched-stats:
+/sys/devices/system/cpu/cpufreq/schedutil/rate_limit_us:10000
+/sys/devices/system/cpu/cpufreq/schedutil/tick:0
+
+
+Test: cyclictest -q -t 24 -i 10000 --latency=1000000 -D 20
+
+# /dev/cpu_dma_latency set to 1000000us
+T: 0 ( 6131) P: 0 I:10000 C:   2000 Min:      2 Act:   97 Avg:  133 Max:     294
+T: 1 ( 6132) P: 0 I:10500 C:   1905 Min:      3 Act:  100 Avg:  136 Max:     297
+T: 2 ( 6133) P: 0 I:11000 C:   1819 Min:      2 Act:  208 Avg:  140 Max:     285
+T: 3 ( 6134) P: 0 I:11500 C:   1740 Min:      2 Act:  145 Avg:  134 Max:     285
+T: 4 ( 6135) P: 0 I:12000 C:   1667 Min:      2 Act:  219 Avg:  143 Max:     283
+T: 5 ( 6136) P: 0 I:12500 C:   1600 Min:      5 Act:  165 Avg:  136 Max:     295
+T: 6 ( 6137) P: 0 I:13000 C:   1539 Min:      2 Act:   40 Avg:  125 Max:     290
+T: 7 ( 6138) P: 0 I:13500 C:   1482 Min:      2 Act:   74 Avg:  131 Max:     298
+T: 8 ( 6139) P: 0 I:14000 C:   1429 Min:      9 Act:  288 Avg:  147 Max:     300
+T: 9 ( 6140) P: 0 I:14500 C:   1380 Min:      3 Act:    8 Avg:  126 Max:     295
+T:10 ( 6141) P: 0 I:15000 C:   1334 Min:      2 Act:   42 Avg:  140 Max:     296
+T:11 ( 6142) P: 0 I:15500 C:   1291 Min:      3 Act:   78 Avg:  128 Max:     292
+T:12 ( 6143) P: 0 I:16000 C:   1250 Min:      2 Act:  195 Avg:  130 Max:     289
+T:13 ( 6144) P: 0 I:16500 C:   1213 Min:      3 Act:  142 Avg:  125 Max:     286
+T:14 ( 6145) P: 0 I:17000 C:   1177 Min:      2 Act:   77 Avg:  137 Max:     313
+T:15 ( 6146) P: 0 I:17500 C:   1143 Min:      4 Act:  140 Avg:  141 Max:     291
+T:16 ( 6147) P: 0 I:18000 C:   1111 Min:      2 Act:   98 Avg:  136 Max:     278
+T:17 ( 6148) P: 0 I:18500 C:   1081 Min:      2 Act:  181 Avg:  132 Max:     300
+T:18 ( 6149) P: 0 I:19000 C:   1053 Min:      7 Act:  175 Avg:  134 Max:     288
+T:19 ( 6150) P: 0 I:19500 C:   1026 Min:      2 Act:  166 Avg:  130 Max:     311
+T:20 ( 6151) P: 0 I:20000 C:   1000 Min:      2 Act:  196 Avg:  119 Max:     298
+T:21 ( 6152) P: 0 I:20500 C:    976 Min:      5 Act:   69 Avg:  122 Max:     310
+T:22 ( 6153) P: 0 I:21000 C:    953 Min:      5 Act:   79 Avg:  138 Max:     256
+T:23 ( 6154) P: 0 I:21500 C:    931 Min:      3 Act:  292 Avg:  131 Max:     292
+
+Sched-stats:
+/sys/devices/system/cpu/cpufreq/schedutil/rate_limit_us:10000
+/sys/devices/system/cpu/cpufreq/schedutil/tick:0
+
+
+Test: cyclictest -q -t 32 -i 10000 --latency=1000000 -D 20
+
+# /dev/cpu_dma_latency set to 1000000us
+T: 0 ( 6161) P: 0 I:10000 C:   2000 Min:      2 Act:   35 Avg:  128 Max:     310
+T: 1 ( 6162) P: 0 I:10500 C:   1905 Min:      4 Act:   87 Avg:  125 Max:     284
+T: 2 ( 6163) P: 0 I:11000 C:   1819 Min:      5 Act:   59 Avg:  126 Max:     303
+T: 3 ( 6164) P: 0 I:11500 C:   1740 Min:      2 Act:  182 Avg:  120 Max:     285
+T: 4 ( 6165) P: 0 I:12000 C:   1667 Min:      4 Act:   91 Avg:  129 Max:     300
+T: 5 ( 6166) P: 0 I:12500 C:   1600 Min:      7 Act:   13 Avg:  128 Max:     289
+T: 6 ( 6167) P: 0 I:13000 C:   1539 Min:      2 Act:   91 Avg:  120 Max:     274
+T: 7 ( 6168) P: 0 I:13500 C:   1482 Min:      2 Act:   88 Avg:  113 Max:     274
+T: 8 ( 6169) P: 0 I:14000 C:   1429 Min:      3 Act:  220 Avg:  110 Max:     276
+T: 9 ( 6170) P: 0 I:14500 C:   1380 Min:      3 Act:   86 Avg:  115 Max:     304
+T:10 ( 6171) P: 0 I:15000 C:   1334 Min:      4 Act:   86 Avg:  128 Max:     274
+T:11 ( 6172) P: 0 I:15500 C:   1291 Min:      2 Act:   85 Avg:  117 Max:     273
+T:12 ( 6173) P: 0 I:16000 C:   1250 Min:      5 Act:  100 Avg:  117 Max:     278
+T:13 ( 6174) P: 0 I:16500 C:   1213 Min:      4 Act:   18 Avg:  104 Max:     290
+T:14 ( 6175) P: 0 I:17000 C:   1177 Min:      3 Act:  167 Avg:  120 Max:     299
+T:15 ( 6176) P: 0 I:17500 C:   1143 Min:      3 Act:   18 Avg:  118 Max:     300
+T:16 ( 6177) P: 0 I:18000 C:   1112 Min:      2 Act:  217 Avg:  104 Max:     303
+T:17 ( 6178) P: 0 I:18500 C:   1081 Min:      2 Act:   86 Avg:  112 Max:     287
+T:18 ( 6179) P: 0 I:19000 C:   1053 Min:      2 Act:   92 Avg:  111 Max:     312
+T:19 ( 6180) P: 0 I:19500 C:   1026 Min:      2 Act:   71 Avg:  125 Max:     298
+T:20 ( 6181) P: 0 I:20000 C:   1000 Min:      3 Act:  177 Avg:  125 Max:     253
+T:21 ( 6182) P: 0 I:20500 C:    976 Min:      5 Act:   71 Avg:  119 Max:     281
+T:22 ( 6183) P: 0 I:21000 C:    953 Min:      4 Act:  233 Avg:  128 Max:     302
+T:23 ( 6184) P: 0 I:21500 C:    931 Min:      2 Act:  198 Avg:  119 Max:     274
+T:24 ( 6185) P: 0 I:22000 C:    909 Min:      6 Act:   53 Avg:  123 Max:     271
+T:25 ( 6186) P: 0 I:22500 C:    889 Min:      1 Act:   15 Avg:  112 Max:     305
+T:26 ( 6187) P: 0 I:23000 C:    870 Min:      4 Act:   84 Avg:  119 Max:     291
+T:27 ( 6188) P: 0 I:23500 C:    851 Min:      7 Act:   83 Avg:  122 Max:     280
+T:28 ( 6189) P: 0 I:24000 C:    834 Min:      2 Act:  161 Avg:  123 Max:     295
+T:29 ( 6190) P: 0 I:24500 C:    817 Min:      2 Act:   66 Avg:  123 Max:     281
+T:30 ( 6191) P: 0 I:25000 C:    800 Min:      4 Act:   74 Avg:  116 Max:     259
+T:31 ( 6192) P: 0 I:25500 C:    785 Min:      4 Act:   84 Avg:  124 Max:     288
+
+Sched-stats:
+/sys/devices/system/cpu/cpufreq/schedutil/rate_limit_us:10000
+/sys/devices/system/cpu/cpufreq/schedutil/tick:0
+
+
+Test: sync; sleep 1; for i in {1..20}; do sleep 2; hackbench -P -g 1 | grep Time; done
+
+Time: 0.008
+Time: 0.009
+Time: 0.008
+Time: 0.008
+Time: 0.008
+Time: 0.010
+Time: 0.008
+Time: 0.009
+Time: 0.009
+Time: 0.024
+Time: 0.008
+Time: 0.008
+Time: 0.012
+Time: 0.008
+Time: 0.008
+Time: 0.009
+Time: 0.008
+Time: 0.011
+Time: 0.008
+Time: 0.008
+
+Sched-stats:
+/sys/devices/system/cpu/cpufreq/schedutil/rate_limit_us:10000
+/sys/devices/system/cpu/cpufreq/schedutil/tick:0
+
+
+Test: ebizzy -t 8 -S 20
+
+234576 records/s
+real 20.00 s
+user 159.89 s
+sys   0.03 s
+
+Sched-stats:
+/sys/devices/system/cpu/cpufreq/schedutil/rate_limit_us:10000
+/sys/devices/system/cpu/cpufreq/schedutil/tick:0
+
+
+Test: ebizzy -t 16 -S 20
+
+262722 records/s
+real 20.00 s
+user 159.92 s
+sys   0.00 s
+
+Sched-stats:
+/sys/devices/system/cpu/cpufreq/schedutil/rate_limit_us:10000
+/sys/devices/system/cpu/cpufreq/schedutil/tick:0
+
+
+Test: ebizzy -t 24 -S 20
+
+249150 records/s
+real 20.00 s
+user 159.68 s
+sys   0.01 s
+
+Sched-stats:
+/sys/devices/system/cpu/cpufreq/schedutil/rate_limit_us:10000
+/sys/devices/system/cpu/cpufreq/schedutil/tick:0
+
+
+Test: ebizzy -t 32 -S 20
+
+257762 records/s
+real 20.00 s
+user 159.78 s
+sys   0.05 s
+
+Sched-stats:
+/sys/devices/system/cpu/cpufreq/schedutil/rate_limit_us:10000
+/sys/devices/system/cpu/cpufreq/schedutil/tick:0
+
+
+Test: perf bench sched pipe
+
+# Running 'sched/pipe' benchmark:
+# Executed 1000000 pipe operations between two processes
+
+     Total time: 4.073 [sec]
+
+       4.073237 usecs/op
+         245504 ops/sec
+
+Sched-stats:
+/sys/devices/system/cpu/cpufreq/schedutil/rate_limit_us:10000
+/sys/devices/system/cpu/cpufreq/schedutil/tick:0
+
+

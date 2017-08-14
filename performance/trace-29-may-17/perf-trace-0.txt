@@ -1,0 +1,41 @@
+Test: cyclictest -q -t 32 -i 10000 --latency=1000000 -D 5
+
+# /dev/cpu_dma_latency set to 1000000us
+T: 0 (29799) P: 0 I:10000 C:    500 Min:      4 Act:   67 Avg:  144 Max:     265
+T: 1 (29800) P: 0 I:10500 C:    477 Min:      8 Act:   67 Avg:  143 Max:     277
+T: 2 (29801) P: 0 I:11000 C:    455 Min:      5 Act:   80 Avg:  133 Max:     263
+T: 3 (29802) P: 0 I:11500 C:    435 Min:      8 Act:  196 Avg:  134 Max:     265
+T: 4 (29803) P: 0 I:12000 C:    417 Min:      9 Act:   71 Avg:  146 Max:     271
+T: 5 (29804) P: 0 I:12500 C:    400 Min:      7 Act:   75 Avg:  110 Max:     256
+T: 6 (29805) P: 0 I:13000 C:    385 Min:      8 Act:   68 Avg:  128 Max:     255
+T: 7 (29806) P: 0 I:13500 C:    371 Min:     10 Act:   59 Avg:  129 Max:     263
+T: 8 (29807) P: 0 I:14000 C:    358 Min:      6 Act:   64 Avg:  120 Max:     285
+T: 9 (29808) P: 0 I:14500 C:    345 Min:      9 Act:  150 Avg:  128 Max:     273
+T:10 (29809) P: 0 I:15000 C:    334 Min:     12 Act:  207 Avg:  114 Max:     257
+T:11 (29810) P: 0 I:15500 C:    323 Min:     11 Act:   69 Avg:  124 Max:     268
+T:12 (29811) P: 0 I:16000 C:    313 Min:      5 Act:   66 Avg:  106 Max:     239
+T:13 (29812) P: 0 I:16500 C:    303 Min:      9 Act:   24 Avg:  112 Max:     254
+T:14 (29813) P: 0 I:17000 C:    295 Min:      3 Act:   70 Avg:  117 Max:     251
+T:15 (29814) P: 0 I:17500 C:    286 Min:      5 Act:  149 Avg:  115 Max:     272
+T:16 (29815) P: 0 I:18000 C:    278 Min:     10 Act:   65 Avg:  103 Max:     228
+T:17 (29816) P: 0 I:18500 C:    271 Min:     13 Act:  187 Avg:  127 Max:     270
+T:18 (29817) P: 0 I:19000 C:    264 Min:      5 Act:   67 Avg:  125 Max:     258
+T:19 (29818) P: 0 I:19500 C:    257 Min:      7 Act:   62 Avg:  116 Max:     259
+T:20 (29819) P: 0 I:20000 C:    250 Min:     10 Act:   67 Avg:  101 Max:     232
+T:21 (29820) P: 0 I:20500 C:    244 Min:     11 Act:   67 Avg:  125 Max:     252
+T:22 (29821) P: 0 I:21000 C:    239 Min:      4 Act:  239 Avg:  101 Max:     239
+T:23 (29822) P: 0 I:21500 C:    233 Min:     10 Act:   95 Avg:  114 Max:     244
+T:24 (29823) P: 0 I:22000 C:    228 Min:      5 Act:   59 Avg:   99 Max:     236
+T:25 (29824) P: 0 I:22500 C:    223 Min:     11 Act:   69 Avg:  100 Max:     261
+T:26 (29825) P: 0 I:23000 C:    218 Min:      5 Act:   65 Avg:   99 Max:     221
+T:27 (29826) P: 0 I:23500 C:    213 Min:      9 Act:  174 Avg:  108 Max:     243
+T:28 (29827) P: 0 I:24000 C:    209 Min:      9 Act:   15 Avg:   87 Max:     214
+T:29 (29828) P: 0 I:24500 C:    205 Min:     10 Act:  233 Avg:  108 Max:     251
+T:30 (29829) P: 0 I:25000 C:    200 Min:      9 Act:   25 Avg:  105 Max:     221
+T:31 (29830) P: 0 I:25500 C:    197 Min:      4 Act:   63 Avg:  109 Max:     250
+
+Sched-stats:
+/sys/devices/system/cpu/cpufreq/schedutil/callback_count:9713
+/sys/devices/system/cpu/cpufreq/schedutil/rate_limit_us:500
+/sys/devices/system/cpu/cpufreq/schedutil/tick:0
+/sys/devices/system/cpu/cpufreq/schedutil/update_count:9648

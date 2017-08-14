@@ -1,0 +1,394 @@
+          <idle>-0     [004] d.h.  1240.044128: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=004
+          <idle>-0     [004] ....  1240.044135: sched_switch: prev_comm=swapper/4 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [004] d.h.  1240.069624: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=004
+          <idle>-0     [004] ....  1240.069631: sched_switch: prev_comm=swapper/4 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [004] d.h.  1240.095123: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=004
+          <idle>-0     [004] ....  1240.095130: sched_switch: prev_comm=swapper/4 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [004] d.h.  1240.120623: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=004
+          <idle>-0     [004] ....  1240.120630: sched_switch: prev_comm=swapper/4 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [004] d.h.  1240.146123: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=004
+          <idle>-0     [004] ....  1240.146130: sched_switch: prev_comm=swapper/4 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [004] d.h.  1240.171594: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=004
+          <idle>-0     [004] ....  1240.171596: sched_switch: prev_comm=swapper/4 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [004] d.h.  1240.197191: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=004
+          <idle>-0     [004] ....  1240.197215: sched_switch: prev_comm=swapper/4 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [004] d.h.  1240.222601: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=004
+          <idle>-0     [004] ....  1240.222606: sched_switch: prev_comm=swapper/4 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [004] d.h.  1240.248191: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=004
+          <idle>-0     [004] ....  1240.248216: sched_switch: prev_comm=swapper/4 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [004] d.h.  1240.273692: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=004
+          <idle>-0     [004] ....  1240.273716: sched_switch: prev_comm=swapper/4 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [004] d.h.  1240.299168: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=004
+          <idle>-0     [004] ....  1240.299195: sched_switch: prev_comm=swapper/4 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [004] d.h.  1240.324663: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=004
+          <idle>-0     [004] ....  1240.324690: sched_switch: prev_comm=swapper/4 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [004] d.h.  1240.350121: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=004
+          <idle>-0     [004] ....  1240.350168: sched_switch: prev_comm=swapper/4 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [004] d.h.  1240.375590: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=004
+          <idle>-0     [004] ....  1240.375595: sched_switch: prev_comm=swapper/4 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [004] d.h.  1240.401261: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=004
+          <idle>-0     [004] ....  1240.401280: sched_switch: prev_comm=swapper/4 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [004] d.h.  1240.426718: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=004
+          <idle>-0     [004] ....  1240.426735: sched_switch: prev_comm=swapper/4 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [004] dNh.  1240.452089: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=004
+          <idle>-0     [006] ....  1240.452134: sched_switch: prev_comm=swapper/6 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [006] dNh.  1240.477622: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=006
+          <idle>-0     [007] ....  1240.477685: sched_switch: prev_comm=swapper/7 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [007] d.h.  1240.503266: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=007
+          <idle>-0     [007] ....  1240.503285: sched_switch: prev_comm=swapper/7 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [007] d.h.  1240.528655: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=007
+          <idle>-0     [007] ....  1240.528680: sched_switch: prev_comm=swapper/7 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [007] d.h.  1240.554283: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=007
+          <idle>-0     [007] ....  1240.554303: sched_switch: prev_comm=swapper/7 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [007] d.h.  1240.579722: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=007
+          <idle>-0     [007] ....  1240.579756: sched_switch: prev_comm=swapper/7 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [007] d.h.  1240.605157: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=007
+          <idle>-0     [007] ....  1240.605184: sched_switch: prev_comm=swapper/7 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [007] d.h.  1240.630594: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=007
+          <idle>-0     [007] ....  1240.630604: sched_switch: prev_comm=swapper/7 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [007] d.h.  1240.656161: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=007
+          <idle>-0     [007] ....  1240.656197: sched_switch: prev_comm=swapper/7 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [007] d.h.  1240.681658: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=007
+          <idle>-0     [007] ....  1240.681685: sched_switch: prev_comm=swapper/7 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [007] dNh.  1240.707128: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=007
+          <idle>-0     [000] ....  1240.707199: sched_switch: prev_comm=swapper/0 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [000] d.h.  1240.732643: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=000
+          <idle>-0     [000] ....  1240.732654: sched_switch: prev_comm=swapper/0 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [000] d.h.  1240.758255: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=000
+          <idle>-0     [000] ....  1240.758274: sched_switch: prev_comm=swapper/0 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [000] d.h.  1240.783581: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=000
+          <idle>-0     [000] ....  1240.783586: sched_switch: prev_comm=swapper/0 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [000] d.h.  1240.809149: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=000
+          <idle>-0     [000] ....  1240.809171: sched_switch: prev_comm=swapper/0 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [000] dNh.  1240.834650: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=000
+          <idle>-0     [001] ....  1240.834703: sched_switch: prev_comm=swapper/1 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [001] d.h.  1240.860229: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=001
+          <idle>-0     [001] ....  1240.860249: sched_switch: prev_comm=swapper/1 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [001] d.h.  1240.885578: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=001
+          <idle>-0     [001] ....  1240.885583: sched_switch: prev_comm=swapper/1 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [001] d.h.  1240.911150: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=001
+          <idle>-0     [001] ....  1240.911175: sched_switch: prev_comm=swapper/1 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [001] d.h.  1240.936644: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=001
+          <idle>-0     [001] ....  1240.936653: sched_switch: prev_comm=swapper/1 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [001] d.h.  1240.962143: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=001
+          <idle>-0     [001] ....  1240.962152: sched_switch: prev_comm=swapper/1 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [001] d.h.  1240.987648: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=001
+          <idle>-0     [001] ....  1240.987675: sched_switch: prev_comm=swapper/1 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [001] d.h.  1241.013109: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=001
+          <idle>-0     [001] ....  1241.013136: sched_switch: prev_comm=swapper/1 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [001] d.h.  1241.038643: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=001
+          <idle>-0     [001] ....  1241.038665: sched_switch: prev_comm=swapper/1 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [001] dNh.  1241.064113: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=001
+          <idle>-0     [002] ....  1241.064157: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [002] d.h.  1241.089643: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=002
+          <idle>-0     [002] ....  1241.089665: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [002] d.h.  1241.115125: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=002
+          <idle>-0     [002] ....  1241.115145: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [002] d.h.  1241.140645: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=002
+          <idle>-0     [002] ....  1241.140671: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [002] d.h.  1241.166125: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=002
+          <idle>-0     [002] ....  1241.166136: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [002] d.h.  1241.191571: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=002
+          <idle>-0     [002] ....  1241.191575: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [002] d.h.  1241.217198: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=002
+          <idle>-0     [002] ....  1241.217213: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [002] d.h.  1241.242602: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=002
+          <idle>-0     [002] ....  1241.242643: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [002] d.h.  1241.268158: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=002
+          <idle>-0     [002] ....  1241.268170: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [002] d.h.  1241.293695: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=002
+          <idle>-0     [002] ....  1241.293710: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [002] d.h.  1241.319243: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=002
+          <idle>-0     [002] ....  1241.319263: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [002] d.h.  1241.344570: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=002
+          <idle>-0     [002] ....  1241.344594: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [002] d.h.  1241.370153: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=002
+          <idle>-0     [002] ....  1241.370175: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [002] d.h.  1241.395641: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=002
+          <idle>-0     [002] ....  1241.395676: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [002] d.h.  1241.421141: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=002
+          <idle>-0     [002] ....  1241.421166: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [002] d.h.  1241.446597: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=002
+          <idle>-0     [002] ....  1241.446638: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [002] d.h.  1241.472268: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=002
+          <idle>-0     [002] ....  1241.472287: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [002] d.h.  1241.497639: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=002
+          <idle>-0     [002] ....  1241.497664: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [002] d.h.  1241.523129: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=002
+          <idle>-0     [002] ....  1241.523158: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [002] d.h.  1241.548612: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=002
+          <idle>-0     [002] ....  1241.548624: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [002] d.h.  1241.574280: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=002
+          <idle>-0     [002] ....  1241.574301: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [002] d.h.  1241.599635: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=002
+          <idle>-0     [002] ....  1241.599660: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [002] d.h.  1241.625135: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=002
+          <idle>-0     [002] ....  1241.625160: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [002] d.h.  1241.650636: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=002
+          <idle>-0     [002] ....  1241.650649: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [002] d.h.  1241.676108: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=002
+          <idle>-0     [002] ....  1241.676137: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [002] d.h.  1241.701714: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=002
+          <idle>-0     [002] ....  1241.701742: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [002] d.h.  1241.727252: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=002
+          <idle>-0     [002] ....  1241.727272: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [002] d.h.  1241.752699: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=002
+          <idle>-0     [002] ....  1241.752722: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [002] d.h.  1241.778223: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=002
+          <idle>-0     [002] ....  1241.778239: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [002] d.h.  1241.803558: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=002
+          <idle>-0     [002] ....  1241.803564: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [002] d.h.  1241.829243: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=002
+          <idle>-0     [002] ....  1241.829268: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [002] d.h.  1241.854602: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=002
+          <idle>-0     [002] ....  1241.854615: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [002] d.h.  1241.880245: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=002
+          <idle>-0     [002] ....  1241.880260: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [002] d.h.  1241.905705: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=002
+          <idle>-0     [002] ....  1241.905727: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [002] d.h.  1241.931083: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=002
+          <idle>-0     [002] ....  1241.931126: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [002] d.h.  1241.956696: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=002
+          <idle>-0     [002] ....  1241.956718: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [002] d.h.  1241.982118: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=002
+          <idle>-0     [002] ....  1241.982147: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [002] d.h.  1242.007621: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=002
+          <idle>-0     [002] ....  1242.007651: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [002] d.h.  1242.033086: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=002
+          <idle>-0     [002] ....  1242.033101: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [002] d.h.  1242.058578: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=002
+          <idle>-0     [002] ....  1242.058606: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [002] d.h.  1242.084117: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=002
+          <idle>-0     [002] ....  1242.084145: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [002] d.h.  1242.109638: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=002
+          <idle>-0     [002] ....  1242.109661: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [002] d.h.  1242.135077: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=002
+          <idle>-0     [002] ....  1242.135092: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [002] d.h.  1242.160638: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=002
+          <idle>-0     [002] ....  1242.160660: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [002] d.h.  1242.186226: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=002
+          <idle>-0     [002] ....  1242.186248: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [002] d.h.  1242.211618: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=002
+          <idle>-0     [002] ....  1242.211646: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [002] d.h.  1242.237124: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=002
+          <idle>-0     [002] ....  1242.237138: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [002] d.h.  1242.262612: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=002
+          <idle>-0     [002] ....  1242.262640: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [002] d.h.  1242.288206: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=002
+          <idle>-0     [002] ....  1242.288229: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [002] d.h.  1242.313591: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=002
+          <idle>-0     [002] ....  1242.313604: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [002] d.h.  1242.339161: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=002
+          <idle>-0     [002] ....  1242.339192: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [002] d.h.  1242.364625: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=002
+          <idle>-0     [002] ....  1242.364640: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [002] d.h.  1242.390173: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=002
+          <idle>-0     [002] ....  1242.390198: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [002] d.h.  1242.415569: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=002
+          <idle>-0     [002] ....  1242.415590: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [002] d.h.  1242.441273: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=002
+          <idle>-0     [002] ....  1242.441303: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [002] d.h.  1242.466684: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=002
+          <idle>-0     [002] ....  1242.466691: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [002] d.h.  1242.492289: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=002
+          <idle>-0     [002] ....  1242.492306: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [002] d.h.  1242.517571: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=002
+          <idle>-0     [002] ....  1242.517578: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [002] d.h.  1242.543166: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=002
+          <idle>-0     [002] ....  1242.543190: sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [002] dNh.  1242.568749: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=002
+          <idle>-0     [003] ....  1242.568780: sched_switch: prev_comm=swapper/3 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [003] d.h.  1242.594238: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=003
+          <idle>-0     [003] ....  1242.594254: sched_switch: prev_comm=swapper/3 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [003] d.h.  1242.619733: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=003
+          <idle>-0     [003] ....  1242.619762: sched_switch: prev_comm=swapper/3 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [003] d.h.  1242.645294: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=003
+          <idle>-0     [003] ....  1242.645308: sched_switch: prev_comm=swapper/3 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [003] d.h.  1242.670657: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=003
+          <idle>-0     [003] ....  1242.670673: sched_switch: prev_comm=swapper/3 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [003] d.h.  1242.696127: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=003
+          <idle>-0     [003] ....  1242.696152: sched_switch: prev_comm=swapper/3 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [003] d.h.  1242.721750: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=003
+          <idle>-0     [003] ....  1242.721767: sched_switch: prev_comm=swapper/3 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [003] d.h.  1242.747163: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=003
+          <idle>-0     [003] ....  1242.747188: sched_switch: prev_comm=swapper/3 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [003] d.h.  1242.772663: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=003
+          <idle>-0     [003] ....  1242.772688: sched_switch: prev_comm=swapper/3 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [003] d.h.  1242.798257: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=003
+          <idle>-0     [003] ....  1242.798272: sched_switch: prev_comm=swapper/3 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [003] dNh.  1242.823671: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=003
+          <idle>-0     [004] ....  1242.823694: sched_switch: prev_comm=swapper/4 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [004] d.h.  1242.849038: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=004
+          <idle>-0     [004] ....  1242.849046: sched_switch: prev_comm=swapper/4 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [004] d.h.  1242.874679: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=004
+          <idle>-0     [004] ....  1242.874688: sched_switch: prev_comm=swapper/4 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [004] d.h.  1242.900260: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=004
+          <idle>-0     [004] ....  1242.900275: sched_switch: prev_comm=swapper/4 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [004] d.h.  1242.925652: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=004
+          <idle>-0     [004] ....  1242.925681: sched_switch: prev_comm=swapper/4 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [004] d.h.  1242.951279: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=004
+          <idle>-0     [004] ....  1242.951296: sched_switch: prev_comm=swapper/4 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [004] d.h.  1242.976714: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=004
+          <idle>-0     [004] ....  1242.976728: sched_switch: prev_comm=swapper/4 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [004] d.h.  1243.002068: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=004
+          <idle>-0     [004] ....  1243.002077: sched_switch: prev_comm=swapper/4 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [004] dNh.  1243.027641: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=004
+          <idle>-0     [005] ....  1243.027672: sched_switch: prev_comm=swapper/5 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [005] d.h.  1243.053258: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=005
+          <idle>-0     [005] ....  1243.053287: sched_switch: prev_comm=swapper/5 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [005] d.h.  1243.078619: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=005
+          <idle>-0     [005] ....  1243.078642: sched_switch: prev_comm=swapper/5 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [005] d.h.  1243.104028: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=005
+          <idle>-0     [005] ....  1243.104032: sched_switch: prev_comm=swapper/5 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [005] d.h.  1243.129663: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=005
+          <idle>-0     [005] ....  1243.129693: sched_switch: prev_comm=swapper/5 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [005] d.h.  1243.155097: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=005
+          <idle>-0     [005] ....  1243.155121: sched_switch: prev_comm=swapper/5 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [005] d.h.  1243.180735: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=005
+          <idle>-0     [005] ....  1243.180752: sched_switch: prev_comm=swapper/5 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [005] d.h.  1243.206255: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=005
+          <idle>-0     [005] ....  1243.206272: sched_switch: prev_comm=swapper/5 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [005] d.h.  1243.231594: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=005
+          <idle>-0     [005] ....  1243.231619: sched_switch: prev_comm=swapper/5 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [005] d.h.  1243.257266: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=005
+          <idle>-0     [005] ....  1243.257297: sched_switch: prev_comm=swapper/5 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [005] d.h.  1243.282626: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=005
+          <idle>-0     [005] ....  1243.282649: sched_switch: prev_comm=swapper/5 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [005] d.h.  1243.308072: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=005
+          <idle>-0     [005] ....  1243.308094: sched_switch: prev_comm=swapper/5 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [005] d.h.  1243.333643: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=005
+          <idle>-0     [005] ....  1243.333668: sched_switch: prev_comm=swapper/5 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [005] d.h.  1243.359127: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=005
+          <idle>-0     [005] ....  1243.359142: sched_switch: prev_comm=swapper/5 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [005] d.h.  1243.384733: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=005
+          <idle>-0     [005] ....  1243.384750: sched_switch: prev_comm=swapper/5 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [005] d.h.  1243.410143: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=005
+          <idle>-0     [005] ....  1243.410167: sched_switch: prev_comm=swapper/5 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [005] d.h.  1243.435725: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=005
+          <idle>-0     [005] ....  1243.435755: sched_switch: prev_comm=swapper/5 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [005] d.h.  1243.461175: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=005
+          <idle>-0     [005] ....  1243.461188: sched_switch: prev_comm=swapper/5 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [005] d.h.  1243.486532: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=005
+          <idle>-0     [005] ....  1243.486538: sched_switch: prev_comm=swapper/5 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [005] d.h.  1243.512143: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=005
+          <idle>-0     [005] ....  1243.512169: sched_switch: prev_comm=swapper/5 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [005] d.h.  1243.537518: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=005
+          <idle>-0     [005] ....  1243.537534: sched_switch: prev_comm=swapper/5 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [005] d.h.  1243.563143: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=005
+          <idle>-0     [005] ....  1243.563168: sched_switch: prev_comm=swapper/5 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [005] d.h.  1243.588638: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=005
+          <idle>-0     [005] ....  1243.588662: sched_switch: prev_comm=swapper/5 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [005] d.h.  1243.614141: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=005
+          <idle>-0     [005] ....  1243.614149: sched_switch: prev_comm=swapper/5 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [005] d.h.  1243.639710: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=005
+          <idle>-0     [005] ....  1243.639740: sched_switch: prev_comm=swapper/5 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [005] d.h.  1243.665142: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=005
+          <idle>-0     [005] ....  1243.665166: sched_switch: prev_comm=swapper/5 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [005] d.h.  1243.690657: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=005
+          <idle>-0     [005] ....  1243.690666: sched_switch: prev_comm=swapper/5 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [005] d.h.  1243.716139: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=005
+          <idle>-0     [005] ....  1243.716164: sched_switch: prev_comm=swapper/5 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [005] d.h.  1243.741625: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=005
+          <idle>-0     [005] ....  1243.741650: sched_switch: prev_comm=swapper/5 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [005] d.h.  1243.767160: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=005
+          <idle>-0     [005] ....  1243.767168: sched_switch: prev_comm=swapper/5 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [005] d.h.  1243.792703: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=005
+          <idle>-0     [005] ....  1243.792733: sched_switch: prev_comm=swapper/5 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [005] d.h.  1243.818026: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=005
+          <idle>-0     [005] ....  1243.818033: sched_switch: prev_comm=swapper/5 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [005] dNh.  1243.843615: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=005
+          <idle>-0     [006] ....  1243.843680: sched_switch: prev_comm=swapper/6 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [006] d.h.  1243.869227: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=006
+          <idle>-0     [006] ....  1243.869257: sched_switch: prev_comm=swapper/6 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [006] d.h.  1243.894697: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=006
+          <idle>-0     [006] ....  1243.894728: sched_switch: prev_comm=swapper/6 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [006] d.h.  1243.920237: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=006
+          <idle>-0     [006] ....  1243.920254: sched_switch: prev_comm=swapper/6 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [006] d.h.  1243.945628: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=006
+          <idle>-0     [006] ....  1243.945636: sched_switch: prev_comm=swapper/6 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [006] d.h.  1243.971143: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=006
+          <idle>-0     [006] ....  1243.971173: sched_switch: prev_comm=swapper/6 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [006] d.h.  1243.996626: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=006
+          <idle>-0     [006] ....  1243.996651: sched_switch: prev_comm=swapper/6 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [006] d.h.  1244.022029: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=006
+          <idle>-0     [006] ....  1244.022051: sched_switch: prev_comm=swapper/6 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [006] d.h.  1244.047507: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=006
+          <idle>-0     [006] ....  1244.047511: sched_switch: prev_comm=swapper/6 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [006] d.h.  1244.073252: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=006
+          <idle>-0     [006] ....  1244.073268: sched_switch: prev_comm=swapper/6 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [006] d.h.  1244.098624: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=006
+          <idle>-0     [006] ....  1244.098629: sched_switch: prev_comm=swapper/6 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [006] d.h.  1244.124133: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=006
+          <idle>-0     [006] ....  1244.124157: sched_switch: prev_comm=swapper/6 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [006] d.h.  1244.149709: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=006
+          <idle>-0     [006] ....  1244.149740: sched_switch: prev_comm=swapper/6 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [006] d.h.  1244.175131: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=006
+          <idle>-0     [006] ....  1244.175156: sched_switch: prev_comm=swapper/6 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [006] d.h.  1244.200638: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=006
+          <idle>-0     [006] ....  1244.200683: sched_switch: prev_comm=swapper/6 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [006] d.h.  1244.226007: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=006
+          <idle>-0     [006] ....  1244.226018: sched_switch: prev_comm=swapper/6 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [006] d.h.  1244.251692: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=006
+          <idle>-0     [006] ....  1244.251723: sched_switch: prev_comm=swapper/6 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [006] d.h.  1244.277128: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=006
+          <idle>-0     [006] ....  1244.277153: sched_switch: prev_comm=swapper/6 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [006] d.h.  1244.302505: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=006
+          <idle>-0     [006] ....  1244.302513: sched_switch: prev_comm=swapper/6 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [006] d.h.  1244.328001: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=006
+          <idle>-0     [006] ....  1244.328005: sched_switch: prev_comm=swapper/6 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [006] d.h.  1244.353629: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=006
+          <idle>-0     [006] ....  1244.353650: sched_switch: prev_comm=swapper/6 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [006] d.h.  1244.379000: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=006
+          <idle>-0     [006] ....  1244.379003: sched_switch: prev_comm=swapper/6 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [006] d.h.  1244.404605: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=006
+          <idle>-0     [006] ....  1244.404630: sched_switch: prev_comm=swapper/6 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [006] d.h.  1244.430265: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=006
+          <idle>-0     [006] ....  1244.430315: sched_switch: prev_comm=swapper/6 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [006] d.h.  1244.455512: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=006
+          <idle>-0     [006] ....  1244.455520: sched_switch: prev_comm=swapper/6 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [006] d.h.  1244.481192: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=006
+          <idle>-0     [006] ....  1244.481221: sched_switch: prev_comm=swapper/6 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [006] d.h.  1244.506539: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=006
+          <idle>-0     [006] ....  1244.506547: sched_switch: prev_comm=swapper/6 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [006] d.h.  1244.532276: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=006
+          <idle>-0     [006] ....  1244.532291: sched_switch: prev_comm=swapper/6 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [006] d.h.  1244.557551: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=006
+          <idle>-0     [006] ....  1244.557575: sched_switch: prev_comm=swapper/6 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [006] d.h.  1244.583213: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=006
+          <idle>-0     [006] ....  1244.583225: sched_switch: prev_comm=swapper/6 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [006] d.h.  1244.608594: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=006
+          <idle>-0     [006] ....  1244.608602: sched_switch: prev_comm=swapper/6 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [006] d.h.  1244.634241: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=006
+          <idle>-0     [006] ....  1244.634257: sched_switch: prev_comm=swapper/6 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [006] d.h.  1244.659577: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=006
+          <idle>-0     [006] ....  1244.659599: sched_switch: prev_comm=swapper/6 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [006] d.h.  1244.685104: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=006
+          <idle>-0     [006] ....  1244.685134: sched_switch: prev_comm=swapper/6 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [006] d.h.  1244.710606: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=006
+          <idle>-0     [006] ....  1244.710615: sched_switch: prev_comm=swapper/6 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [006] d.h.  1244.735997: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=006
+          <idle>-0     [006] ....  1244.736019: sched_switch: prev_comm=swapper/6 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [006] d.h.  1244.761691: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=006
+          <idle>-0     [006] ....  1244.761722: sched_switch: prev_comm=swapper/6 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [006] d.h.  1244.786992: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=006
+          <idle>-0     [006] ....  1244.786998: sched_switch: prev_comm=swapper/6 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [006] d.h.  1244.812552: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=006
+          <idle>-0     [006] ....  1244.812578: sched_switch: prev_comm=swapper/6 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [006] d.h.  1244.838133: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=006
+          <idle>-0     [006] ....  1244.838156: sched_switch: prev_comm=swapper/6 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [006] d.h.  1244.863504: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=006
+          <idle>-0     [006] ....  1244.863510: sched_switch: prev_comm=swapper/6 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [006] d.h.  1244.889095: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=006
+          <idle>-0     [006] ....  1244.889113: sched_switch: prev_comm=swapper/6 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [006] d.h.  1244.914568: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=006
+          <idle>-0     [006] ....  1244.914580: sched_switch: prev_comm=swapper/6 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [006] d.h.  1244.940060: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=006
+          <idle>-0     [006] ....  1244.940087: sched_switch: prev_comm=swapper/6 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [006] d.h.  1244.965629: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=006
+          <idle>-0     [006] ....  1244.965649: sched_switch: prev_comm=swapper/6 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [006] d.h.  1244.991013: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=006
+          <idle>-0     [006] ....  1244.991055: sched_switch: prev_comm=swapper/6 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [006] d.h.  1245.016617: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=006
+          <idle>-0     [006] ....  1245.016637: sched_switch: prev_comm=swapper/6 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
+          <idle>-0     [006] d.h.  1245.042056: sched_waking: comm=cyclictest pid=25063 prio=120 target_cpu=006
+          <idle>-0     [006] .N..  1245.042153: sched_switch: prev_comm=swapper/6 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyclictest next_pid=25063 next_prio=120
