@@ -53,11 +53,9 @@ get_thermal_stats()
 }
 
 if [ $1 -a $1 -eq 1 ]; then
-	echo "\n\nRESETTING\n\n"
 	reset_cpufreq_stats
 	reset_thermal_stats
 else
-	echo "\n\nSTATS COLLECT\n\n"
 	echo "" > $path
 	get_cpufreq_stats
 	get_thermal_stats
