@@ -27,9 +27,9 @@ get_cpufreq_stats()
 
 reset_thermal_stats()
 {
-	for device in /sys/kernel/debug/thermal/cooling*;
+	for device in /sys/class/thermal/cooling*;
 	do
-		echo 1 > $device/reset
+		echo 1 > $device/stats/reset
 	done
 }
 
@@ -41,13 +41,7 @@ get_thermal_stats()
 	do
 		grep . $device/* >> $path
 		echo "" >> $path
-	done
-
-	for device in /sys/kernel/debug/thermal/cooling*;
-	do
-		grep . $device/* >> $path
-		echo "" >> $path
-		grep . $device/*/* >> $path
+		grep . $device/stats/* >> $path
 		echo "" >> $path
 	done
 }
