@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Parsing Large data trace</title>
+        <!-- 1. Add JQuery and Highcharts in the head of your page -->
+       <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		<script src="http://code.highcharts.com/stock/highstock.js"></script>
+
+        <!-- 2. You can add print and export feature by adding this line -->
+		<script src="http://code.highcharts.com/stock/modules/exporting.js"></script>
+
+        <!-- 3. Add the JavaScript with the Highchart options to initialize the chart -->
+		<script type="text/javascript">
+            var options = {
+                chart: {
+					renderTo: 'container',
+					zoomType: 'xy',
+                    type: 'line'
+				},
+				navigator: {
+					enabled: true
+				},
+				legend: {
+					borderRadius:0,
+		            backgroundColor: '#FFFFFF',
+				    itemMarginBottom: 7,
+		            layout: 'vertical',
+				    align: 'left',
+		            verticalAlign: 'top',
+					enabled: true,
+//				    y: 30,
+//					x: 2,
+		            borderWidth: 0,
+//			        width:130,
+				    symbolPadding: 10,
+					useHTML:true,
+					shadow: {
+			          color: '#000',
+				      width: 3,
+					  opacity: 0.15,
+				      offsetY: 2,
+					  offsetX: 1
+				    }
+				},
+				rangeSelector: {
+					enabled: true,
+					buttons: [{
+						count: 1,
+						type: 'millisecond',
+						text: '1ms'
+					}, {
+						count: 100,
+						type: 'millisecond',
+						text: '100ms'
+					}, {
+						count: 200,
+						type: 'millisecond',
+						text: '200ms'
+					}, {
+						count: 500,
+						type: 'millisecond',
+						text: '500ms'
+					}, {
+						count: 1,
+						type: 'second',
+						text: '1sec'
+					}, {
+						type: 'all',
+						text: 'All'
+					}],
+				},
+				scrollbar: {
+					enabled: true
+				},
+                title: {
+                    text: 'Power Consumption or anything else you want to display'                 
+                },
+                subtitle: {
+                    text: 'Current, Watt or whatever the unit'
+                },
+				yAxis: [{
+					title: {
+						text : 'Current, Watt or whatever the unit',
+					},
+				}],
+   				xAxis: {
+					type: 'datetime',
+					labels: {
+						formatter: function() {
+									   return this.value/1000;
+									}
+					},
+					title: {
+						text: 'Time'
+					}						   
+				},
+			//colors: ['#50B432', '#ED561B', '#DDDF00', '#24CBE5', '#64E572', '#FF9655', '#FFF263',      '#6AF9C4'],
+			series: []
+			};
+			
+		var remain = 0;
+		var chart = null;
+
+		function drop(e) {
+
+			if (!e) {
+			var fichiers = document.getElementById('fileinput').files;
+			}
+			else {
+				var fichiers = e.dataTransfer.files;
+			}
+
+			options.series = [];
+			options.yAxis = [];
+			remain = fichiers.length;
+
+			$.each(fichiers, function(fileNo, file) {
+				var reader = new FileReader();
+				reader.onerror = function() { console.error('Error reading file');}
+				//reader.onload = parse;
+				reader.onload = function (event) { 
+					return parse(event, fileNo, file.name);
+					};
+				reader.readAsText(file);
+			});
+
+
+		}
+
+		function parse(event, idx, name){
+
+			var data = event.target.result;			// load file values
+            var series = [];
+			var stepmode = document.getElementById('step_graph').checked;
+			var axismode = document.getElementById('multiple_graph').checked;
+			var ext_axismode = document.getElementById('pery_axis_graph').checked;
+			var relativemode = document.getElementById('relative_time').checked;
+			var decimatemode = document.getElementById('decimate_graph').checked;
+			var csvmode = document.getElementById('csv_mode').checked;
+
+			var offset = -1;
+			var time_idx = 0;
+			var unit_mul = 0;
+
+			if (relativemode == 0)
+				offset = 0;
+
+			// Split the lines
+            var lines = data.split('\n');
+            $.each(lines, function(lineNo, line) {
+				if (line.substring(0, 1) == "#")
+					return;
+				
+				var items = [];
+				if (csvmode) {
+					items = line.split(/,/);
+				} else {				
+					items = line.split(/  */);
+				}
+        
+                // header line contains names of categories
+				if (lineNo == 0) {
+					$.each(items, function(itemNo, item) {
+						var serie = {
+							name : item,
+							yAxis : 0,
+							step : stepmode,
+							data: []
+						};
+
+						if (item.match(/time/) != null ) {
+							time_idx = itemNo;
+							if (item.match(/(uS)/) != null)
+								unit_mul = 1;
+						}
+
+						if (ext_axismode) {
+							// Create an yAxis per chart
+							options.yAxis[itemNo] = {
+											title: {
+												text : item,
+											},
+											opposite : itemNo % 2 == 1,
+										};
+							serie.yAxis = itemNo;
+						} else if (itemNo == 0)  {
+							// Create an yAxis per file
+							options.yAxis[idx] = {
+											title: {
+												text : name,
+											},
+											opposite : idx % 2 == 1,
+							 };
+
+							if (axismode)
+								serie.yAxis = idx;
+						}
+
+						series.push(serie);
+					});
+                }
+                // the rest of the lines contain data with their name in the first position
+				else {
+					var Xindex;
+					if (decimatemode && ((lineNo % 10) != 0))
+						return;
+					
+					if (unit_mul == 0)
+						Xindex = parseFloat(items[time_idx])*1000;
+					else
+						Xindex = parseInt(items[time_idx])/1000;
+
+					if (offset == -1)
+						offset = Xindex;
+					
+					Xindex = Xindex - offset;
+
+					$.each(items, function(itemNo, item) {
+						var Yindex = parseFloat(item);
+						if (itemNo == time_idx)
+							return;
+
+
+						var serie = series[itemNo];
+						if (isNaN(Yindex) || isNaN(Xindex))
+							return;
+
+						var element = [Xindex, Yindex];
+						serie.data.push(element);
+//						serie.data.push(Yindex);
+					});
+                }
+                     
+            });
+			
+			$.each(series, function(itemNo, item) {
+				if (itemNo != time_idx) {
+					options.series.push(item);
+				} 
+			});
+
+			remain--;
+			if (remain == 0) {
+				display(null);
+			}
+
+        };
+
+		function display(e) {
+            //putting all together and create the chart
+			var chartmode = document.getElementById('stock_graph').checked;
+			if (chart)
+				chart.destroy();
+			if (chartmode) {
+				chart = new Highcharts.StockChart(options);
+			} else {
+				chart = new Highcharts.Chart(options);
+			}
+
+		}
+		</script>
+         
+	</head>
+	<body>
+		<!-- File input filed -->
+		<input type='file' name="myFile1" id='fileinput'  onchange='drop()' multiple>
+		<input type='checkbox' name="step" value='1' id='step_graph' onchange='drop()'> step
+  		<input type='checkbox' name="multiple" value='1' id='multiple_graph' onchange='drop()'> per file Y Axis
+  		<input type='checkbox' name="per chart Y-Axis" value='1' id='pery_axis_graph' onchange='drop()'> per chart Y Axis
+  		<input type='checkbox' name="decimate" value='1' id='decimate_graph' onchange='drop()'> decimate data
+  		<input type='checkbox' name="stock" value='1' id='stock_graph' onchange='drop()'> stock graph
+  		<input type='checkbox' name="relative" value='1' id='relative_time' onchange='drop()'> relative time
+  		<input type='checkbox' name="csv" value='1' id='csv_mode' onchange='drop()'> csv mode
+
+        <!-- 3. Add the container -->
+        <div id="container" style="width: 1800px; height: 1000px; margin: 0 auto"></div>      
+                 
+    </body>
+</html>
