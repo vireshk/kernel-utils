@@ -1,12 +1,13 @@
 #define _GNU_SOURCE
+#include <linux/dma-heap.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <sys/ioctl.h>
 #include <sys/mman.h>
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
-#include <linux/memfd.h>
 #include <unistd.h>
 #include <errno.h>
 #include <sys/socket.h>
@@ -26,20 +27,28 @@ struct vsock_shmem_desc {
 	__s32 fd;
 };
 
-// Create a shared memory file descriptor using memfd_create
-static int create_shm_fd(const char *name, size_t size)
+static int create_shm_fd(size_t size)
 {
-	int fd = memfd_create(name, MFD_CLOEXEC);
-	if (fd < 0) {
-		perror("memfd_create");
+	int heap_fd = open("/dev/dma_heap/system", O_RDWR);
+	if (heap_fd < 0) {
+		perror("open /dev/dma_heap/system");
 		return -1;
 	}
-	if (ftruncate(fd, size) < 0) {
-		perror("ftruncate");
-		close(fd);
+
+	struct dma_heap_allocation_data alloc = {
+		.len = size,
+		.fd_flags = O_RDWR | O_CLOEXEC,
+		.heap_flags = 0,
+	};
+
+	if (ioctl(heap_fd, DMA_HEAP_IOCTL_ALLOC, &alloc) < 0) {
+		perror("DMA_HEAP_IOCTL_ALLOC");
+		close(heap_fd);
 		return -1;
 	}
-	return fd;
+
+	close(heap_fd);
+	return alloc.fd;
 }
 
 // Send a file descriptor over a Unix socket
@@ -122,7 +131,7 @@ static int recv_fd(int sock)
 // Demo: write to shared memory and send FD
 static void demo_shm_sender(int sock)
 {
-	int fd = create_shm_fd("demo_shm", 4096);
+	int fd = create_shm_fd(4096);
 	if (fd < 0) return;
 
 	char *mem = mmap(NULL, 4096, PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0);
