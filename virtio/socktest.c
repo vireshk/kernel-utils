@@ -19,12 +19,9 @@
 #define SOL_VSOCK 287
 
 struct vsock_shmem_desc {
-	__u64 token; /* app correlation token */
-	__u64 size; /* size in bytes */
-	__u32 flags; /* VSOCK_SHMEM_F_* */
-	__u32 region_id; /* region identifier (virtio-shmem/ivshmem/etc) */
-	__u32 subop; /* VSOCK_SHMEM_SUBOP_* hint */
 	__s32 fd;
+	__u32 subop; /* VSOCK_SHMEM_SUBOP_* hint */
+	__u64 reserved[3];
 };
 
 static int create_shm_fd(size_t size)
@@ -54,15 +51,7 @@ static int create_shm_fd(size_t size)
 // Send a file descriptor over a Unix socket
 static int send_fd(int sock, int fd)
 {
-	struct vsock_shmem_desc desc = {
-		.token = 0xdeadbeef,
-		.size = 1<<20,
-		.flags = 0,
-		.region_id = 7,
-		.subop = 0,
-		.fd = fd,
-	};
-	char control[CMSG_SPACE(sizeof(desc))];
+	char control[CMSG_SPACE(sizeof(fd))];
 	memset(control, 0, sizeof(control));
 	char dummy = 'X';
 	struct iovec iov = { .iov_base = &dummy, .iov_len = sizeof(dummy) };
@@ -74,8 +63,8 @@ static int send_fd(int sock, int fd)
 
 	cmsg->cmsg_level = SOL_VSOCK;
 	cmsg->cmsg_type = SCM_VSOCK_SHMEM;
-	cmsg->cmsg_len = CMSG_LEN(sizeof(desc));
-	memcpy(CMSG_DATA(cmsg), &desc, sizeof(desc));
+	cmsg->cmsg_len = CMSG_LEN(sizeof(fd));
+	memcpy(CMSG_DATA(cmsg), &fd, sizeof(fd));
 
 	if (sendmsg(sock, &msg, 0) < 0) {
 		perror("sendmsg");
