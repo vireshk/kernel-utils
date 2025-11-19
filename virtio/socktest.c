@@ -19,8 +19,8 @@
 #define SOL_VSOCK 287
 
 struct vsock_shmem_desc {
-	__s32 fd;
 	__u32 subop; /* VSOCK_SHMEM_SUBOP_* hint */
+	__s32 fd;
 	__u64 reserved[3];
 };
 
