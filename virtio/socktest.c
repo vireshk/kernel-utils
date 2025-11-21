@@ -17,11 +17,12 @@
 
 #define SCM_VSOCK_SHMEM 1
 #define SOL_VSOCK 287
+#define VSOCK_SHMEM_SUBOP_OFFER 0
 
 struct vsock_shmem_desc {
 	__u32 subop; /* VSOCK_SHMEM_SUBOP_* hint */
 	__s32 fd;
-	__u64 reserved[3];
+	__u8 reserved[24];
 };
 
 static int create_shm_fd(size_t size)
@@ -51,7 +52,8 @@ static int create_shm_fd(size_t size)
 // Send a file descriptor over a Unix socket
 static int send_fd(int sock, int fd)
 {
-	char control[CMSG_SPACE(sizeof(fd))];
+	struct vsock_shmem_desc desc = {};
+	char control[CMSG_SPACE(sizeof(sizeof(desc)))];
 	memset(control, 0, sizeof(control));
 	char dummy = 'X';
 	struct iovec iov = { .iov_base = &dummy, .iov_len = sizeof(dummy) };
@@ -61,10 +63,12 @@ static int send_fd(int sock, int fd)
 	};
 	struct cmsghdr *cmsg = CMSG_FIRSTHDR(&msg);
 
+	desc.fd = fd;
+	desc.subop = VSOCK_SHMEM_SUBOP_OFFER;
 	cmsg->cmsg_level = SOL_VSOCK;
 	cmsg->cmsg_type = SCM_VSOCK_SHMEM;
-	cmsg->cmsg_len = CMSG_LEN(sizeof(fd));
-	memcpy(CMSG_DATA(cmsg), &fd, sizeof(fd));
+	cmsg->cmsg_len = CMSG_LEN(sizeof(desc));
+	memcpy(CMSG_DATA(cmsg), &desc, sizeof(desc));
 
 	if (sendmsg(sock, &msg, 0) < 0) {
 		perror("sendmsg");
@@ -78,7 +82,8 @@ static int recv_fd(int sock)
 {
 	char dummy;
 	struct iovec iov = { .iov_base = &dummy, .iov_len = sizeof(dummy) };
-	char cbuf[CMSG_SPACE(sizeof(struct vsock_shmem_desc))];
+	struct vsock_shmem_desc *desc;
+	char cbuf[CMSG_SPACE(sizeof(*desc))];
 	int received_fd = -1;
 	struct msghdr msg;
 	ssize_t n;
@@ -101,14 +106,13 @@ static int recv_fd(int sock)
 			cmsg = CMSG_NXTHDR(&msg, cmsg)) {
 		if (cmsg->cmsg_level == SOL_VSOCK &&
 				cmsg->cmsg_type == SCM_VSOCK_SHMEM) {
-			if (cmsg->cmsg_len < CMSG_LEN(sizeof(struct vsock_shmem_desc))) {
+			if (cmsg->cmsg_len < CMSG_LEN(sizeof(*desc))) {
 				fprintf(stderr, "cmsg too short: %zu < %zu\n",
-						(size_t)cmsg->cmsg_len, (size_t)CMSG_LEN(sizeof(struct vsock_shmem_desc)));
+						(size_t)cmsg->cmsg_len, (size_t)CMSG_LEN(sizeof(*desc)));
 				continue;
 			}
-			struct vsock_shmem_desc *d =
-				(struct vsock_shmem_desc *)CMSG_DATA(cmsg);
-			received_fd = d->fd;
+			desc = (struct vsock_shmem_desc *)CMSG_DATA(cmsg);
+			received_fd = desc->fd;
 			break;
 		}
 	}
