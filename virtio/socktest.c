@@ -133,10 +133,10 @@ static void demo_shm_sender(int sock)
 		close(fd);
 		return;
 	}
-	strcpy(mem, "Hello from shared memory via FD!\n");
+	strcpy(mem, "Hello from shared memory via FD!");
 
 	if (send_fd(sock, fd) == 0) {
-		printf("Sender: sent shared memory FD\n");
+		printf("Sender: shared memory FD\n");
 	}
 	munmap(mem, 4096);
 	close(fd);
@@ -146,7 +146,6 @@ static void demo_shm_sender(int sock)
 static void demo_shm_receiver(int sock)
 {
 	int fd = recv_fd(sock);
-	printf("Received fd: %d\n", fd);
 	if (fd < 0)
 		return;
 
@@ -156,7 +155,7 @@ static void demo_shm_receiver(int sock)
 		close(fd);
 		return;
 	}
-	printf("Receiver: got shared memory content: %s\n", mem);
+	printf("Receiver: received memory fd (%s)\n", mem);
 	munmap(mem, 4096);
 	close(fd);
 }
