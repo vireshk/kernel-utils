@@ -17,12 +17,20 @@
 
 #define SCM_VSOCK_SHMEM 1
 #define SOL_VSOCK 287
-#define VSOCK_SHMEM_SUBOP_OFFER 0
 
-struct vsock_shmem_desc {
-	__u32 subop; /* VSOCK_SHMEM_SUBOP_* hint */
+/* SHMEM sub-operation types */
+#define VSOCK_SHMEM_SUBOP_OFFER		0
+#define VSOCK_SHMEM_SUBOP_RELINQUISH	1
+#define VSOCK_SHMEM_SUBOP_RECLAIM	2
+
+/* SHMEM type */
+#define VSOCK_SHMEM_TYPE_LB		0
+#define VSOCK_SHMEM_TYPE_FFA		1
+
+/* Userspace-visible descriptor transferred as ancillary cmsg payload */
+struct vsock_shmem_user_desc {
+	__u32 subop; /*VSOCK_SHMEM_SUBOP_* */
 	__s32 fd;
-	__u8 reserved[24];
 };
 
 static int create_shm_fd(size_t size)
@@ -52,8 +60,8 @@ static int create_shm_fd(size_t size)
 // Send a file descriptor over a Unix socket
 static int send_fd(int sock, int fd)
 {
-	struct vsock_shmem_desc desc = {};
-	char control[CMSG_SPACE(sizeof(sizeof(desc)))];
+	struct vsock_shmem_user_desc udesc = {};
+	char control[CMSG_SPACE(sizeof(sizeof(udesc)))];
 	memset(control, 0, sizeof(control));
 	char dummy = 'X';
 	struct iovec iov = { .iov_base = &dummy, .iov_len = sizeof(dummy) };
@@ -63,12 +71,12 @@ static int send_fd(int sock, int fd)
 	};
 	struct cmsghdr *cmsg = CMSG_FIRSTHDR(&msg);
 
-	desc.fd = fd;
-	desc.subop = VSOCK_SHMEM_SUBOP_OFFER;
+	udesc.fd = fd;
+	udesc.subop = VSOCK_SHMEM_SUBOP_OFFER;
 	cmsg->cmsg_level = SOL_VSOCK;
 	cmsg->cmsg_type = SCM_VSOCK_SHMEM;
-	cmsg->cmsg_len = CMSG_LEN(sizeof(desc));
-	memcpy(CMSG_DATA(cmsg), &desc, sizeof(desc));
+	cmsg->cmsg_len = CMSG_LEN(sizeof(udesc));
+	memcpy(CMSG_DATA(cmsg), &udesc, sizeof(udesc));
 
 	if (sendmsg(sock, &msg, 0) < 0) {
 		perror("sendmsg");
@@ -82,8 +90,8 @@ static int recv_fd(int sock)
 {
 	char dummy;
 	struct iovec iov = { .iov_base = &dummy, .iov_len = sizeof(dummy) };
-	struct vsock_shmem_desc *desc;
-	char cbuf[CMSG_SPACE(sizeof(*desc))];
+	struct vsock_shmem_user_desc *udesc;
+	char cbuf[CMSG_SPACE(sizeof(*udesc))];
 	int received_fd = -1;
 	struct msghdr msg;
 	ssize_t n;
@@ -106,13 +114,13 @@ static int recv_fd(int sock)
 			cmsg = CMSG_NXTHDR(&msg, cmsg)) {
 		if (cmsg->cmsg_level == SOL_VSOCK &&
 				cmsg->cmsg_type == SCM_VSOCK_SHMEM) {
-			if (cmsg->cmsg_len < CMSG_LEN(sizeof(*desc))) {
+			if (cmsg->cmsg_len < CMSG_LEN(sizeof(*udesc))) {
 				fprintf(stderr, "cmsg too short: %zu < %zu\n",
-						(size_t)cmsg->cmsg_len, (size_t)CMSG_LEN(sizeof(*desc)));
+						(size_t)cmsg->cmsg_len, (size_t)CMSG_LEN(sizeof(*udesc)));
 				continue;
 			}
-			desc = (struct vsock_shmem_desc *)CMSG_DATA(cmsg);
-			received_fd = desc->fd;
+			udesc = (struct vsock_shmem_user_desc *)CMSG_DATA(cmsg);
+			received_fd = udesc->fd;
 			break;
 		}
 	}
